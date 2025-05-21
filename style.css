@@ -8,10 +8,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  /* display: flex; */
   display: flex;
   align-items: center;
-  height: 100vh; 
+  /* display: grid; */
+  justify-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;
+
 }
 
 .keys {
@@ -19,13 +22,13 @@ body {
   flex-direction: row;     /* make main axis horizontal (default setting) */
   justify-content: center; /* center items horizontally, in this case */
   align-items: center;     /* center items vertically, in this case */
-  height: 300px;
+  height: 50vh;
 
   background-color:black;
   padding:20px;
-  min-width: 100rem;
-  /* align-items: /; */
-  /* justify-content: center; */
+  min-width: 100vw;
+
+
 }
 
 .key {
@@ -35,11 +38,11 @@ body {
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all .07s ease;
-  min-width: 5rem;
+  min-width: 10rem;
   text-align: center;
   color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+
+  font-size: 30px;
 }
 
 .playing {
